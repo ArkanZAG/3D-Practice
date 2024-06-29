@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace DefaultNamespace
+namespace ItemSystem
 {
 
     public class PlayerInventoryUI : MonoBehaviour

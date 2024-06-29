@@ -1,12 +1,14 @@
 ﻿using System;
+using TMPro;
 using UnityEngine;
 
-namespace DefaultNamespace
+namespace InteractionSystem
 {
     public class PlayerInteraction : MonoBehaviour
     {
         [SerializeField] private GameObject interactionIndicator;
         [SerializeField] private float interactionRange = 5f;
+        [SerializeField] private TextMeshPro indicatorText;
 
         private void Update()
         {
@@ -14,7 +16,7 @@ namespace DefaultNamespace
             interactionIndicator.SetActive(nearestInteractable != null);
             if (nearestInteractable == null) return;
             interactionIndicator.transform.position = nearestInteractable.IndicatorPoint.position;
-            
+            indicatorText.text = "[E] " + nearestInteractable.IndicatorText;
             if (Input.GetKeyDown(KeyCode.E)) nearestInteractable.OnInteracted(this.gameObject);
         }
 

@@ -1,3 +1,4 @@
+using InteractionSystem;
 using UnityEngine;
 
 namespace DialogueSystem

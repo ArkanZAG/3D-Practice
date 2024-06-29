@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using InteractionSystem;
+using UnityEngine;
 
-namespace DefaultNamespace
+namespace ItemSystem
 {
     public class PlayerInventory : MonoBehaviour
     {

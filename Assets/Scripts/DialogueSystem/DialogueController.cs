@@ -1,3 +1,4 @@
+using InteractionSystem;
 using UnityEngine;
 
 namespace DialogueSystem
@@ -7,9 +8,13 @@ namespace DialogueSystem
         [SerializeField] private Dialogue currentDialogue;
         [SerializeField] private int currentDialogueIndex;
         [SerializeField] private TextBox textBox;
+        private bool isInDialogue = false;
+
+        public bool IsInDialogue => isInDialogue;
 
         public void StartDialogue(Dialogue dialogue)
         {
+            isInDialogue = true;
             textBox.gameObject.SetActive(true);
             currentDialogue = dialogue;
             textBox.ShowDialogueEntry(currentDialogue.entries[0]);
@@ -32,6 +37,7 @@ namespace DialogueSystem
         public void StopDialogue()
         {
             textBox.gameObject.SetActive(false);
+            isInDialogue = false;
         }
     }
 }

@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using ItemSystem;
+using UnityEngine;
 
-namespace DefaultNamespace
+namespace InteractionSystem
 {
     public class PickupInteractable : MonoBehaviour, IInteractable
     {
@@ -17,5 +18,7 @@ namespace DefaultNamespace
             visual.SetActive(false);
             CanBeInteracted = false;
         }
+
+        public string IndicatorText => "Pick Up";
     }
 }
