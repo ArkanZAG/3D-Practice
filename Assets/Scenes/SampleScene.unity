@@ -925,6 +925,7 @@ MonoBehaviour:
   playerMovementSpeed: 5
   playerRIgidBody: {fileID: 1217520674}
   visual: {fileID: 1382940676}
+  playerAnimator: {fileID: 1382940677}
 --- !u!136 &1217520673
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1158,6 +1159,11 @@ PrefabInstance:
 --- !u!1 &1382940676 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 81bb9eea30387e442899949a80011e55, type: 3}
+  m_PrefabInstance: {fileID: 1320199421}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1382940677 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 81bb9eea30387e442899949a80011e55, type: 3}
   m_PrefabInstance: {fileID: 1320199421}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1493965594
