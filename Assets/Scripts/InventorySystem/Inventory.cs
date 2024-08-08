@@ -7,10 +7,11 @@ namespace InventorySystem
     {
         [SerializeField] private List<Item> items;
 
+        public List<Item> Items => items;
+
         public void AddItem(Item item)
         {
             items.Add(item);
-            
         }
 
         public void RemoveItem(int index)

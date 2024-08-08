@@ -13,10 +13,11 @@ public class InventoryViewElement : MonoBehaviour
     [SerializeField] private TextMeshProUGUI itemQuantity;
     [SerializeField] private Image image;
 
-    [SerializeField] private Item item;
+    private Item currentItem;
 
-    public void Show()
+    public void Show(Item item)
     {
+        currentItem = item;
         itemName.text = item.itemName;
         image.sprite = item.itemIcon;
     }

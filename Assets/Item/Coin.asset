@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8536bde489df4465a48213e0f8eb4b7b, type: 3}
-  m_Name: A
+  m_Name: Coin
   m_EditorClassIdentifier: 
-  itemName: A
-  itemId: 1
-  itemIcon: {fileID: 0}
+  itemName: Coin
+  itemId: 3
+  itemIcon: {fileID: 21300000, guid: 0837219dc7f204e4ebd849cd2579333e, type: 3}
   itemType: 1
